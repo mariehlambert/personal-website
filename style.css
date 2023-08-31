@@ -42,106 +42,41 @@ body {
     color: black;
 }
 
-/* 1170×2532 pixels at 460ppi */
-/* iPhone 14 */
-@media only screen 
-    and (width: 390px) 
-    and (height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        .sidebar {
-            text-align: center;
-            height: auto;
-            width: 100%;
-          }
-     }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        text-align: center;
+        height: auto;
+        width: 100%;
+      }
+}
 
-/* 1284×2778 pixels at 458ppi */
-/* iPhone 14 Plus */
-@media only screen 
-    and (width: 428px) 
-    and (height: 926px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        .sidebar {
-            text-align: center;
-            height: auto;
-            width: 100%;
-          }
-     }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+    .sidebar {
+        text-align: center;
+        height: auto;
+        width: 100%;
+      }
+}
 
-/* 1179×2556 pixels at 460ppi */
-/* iPhone 14 Pro */
-@media only screen 
-    and (width: 393px) 
-    and (height: 852px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        .sidebar {
-            text-align: center;
-            height: auto;
-            width: 100%;
-          }
-     }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { }
 
-/* 1284×2778 pixels at 460ppi */
-/* iPhone 14 Pro Max */
-@media only screen 
-    and (width: 430px) 
-    and (height: 932px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        .sidebar {
-            text-align: center;
-            height: auto;
-            width: 100%;
-          }
-     }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { }
 
-/* 1080×2340 pixels at 476ppi */
-/*  iPhone X, iPhone Xs, iPhone 11 Pro, iPhone 12 Mini, and iPhone 13 Mini */
-@media only screen 
-    and (width: 375px) 
-    and (height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        .sidebar {
-            text-align: center;
-            height: auto;
-            width: 100%;
-          }
-     }
-
-/* 828×1792 pixels at 326ppi */
-/* For iPhone XR, and iPhone 11 */
-@media only screen 
-    and (width: 414px) 
-    and (height: 896px) 
-    and (-webkit-device-pixel-ratio: 2) {
-        .sidebar {
-            text-align: center;
-            height: auto;
-            width: 100%;
-          }
-     }
-
-/* 1242×2688 pixels at 458ppi */
-/* For iPhone Xs Max, and iPhone 11 Pro Max */
-@media only screen 
-    and (width: 414px) 
-    and (height: 896px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        .sidebar {
-            text-align: center;
-            height: auto;
-            width: 100%;
-          }
-     }
-
-/* 750×1334 pixels at 326ppi */
-/* For iPhone 7 (2016), iPhone 8 (2017), and iPhone SE (1st to 3rd gen) */
-@media only screen 
-    and (width: 375px) 
-    and (height: 667px) 
-    and (-webkit-device-pixel-ratio: 2) {
-        .sidebar {
-            text-align: center;
-            height: auto;
-            width: 200%;
-          }
-     }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        float:left; 
+        width:30vh; 
+        text-align: left; 
+        /* padding-left: 2%; */
+        padding: 2%;
+        padding-left: 0%;
+        height: 100vh;
+    }
+ }
