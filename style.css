@@ -16,12 +16,15 @@ body {
     display: flex;
     flex-direction: column;
     float:left; 
-    width:30vh; 
-    text-align: left; 
+    /* width:30vh;  */
+    /* text-align: left;  */
     /* padding-left: 2%; */
     padding: 2%;
     padding-left: 0%;
-    height: 100vh;
+    /* height: 100vh; */
+    text-align: center;
+    height: auto;
+    width: 100%;
 }
 
 .sidebar ul {
