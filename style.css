@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    background-color: #e6e5e1;
+    font-family: Montserrat;
+    color: black;
+    font-size: 14px;
+    padding: 5%;
+}
+
+.h-img-text-box {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.v-img-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.v-img-text-box-fixed {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-content: flex-start;
+}
+
+.v-img-text-box-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 80%;
+    max-height: 100%;
+    margin: 5%;
+    margin-top: 2%;
+    left: 60%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top; /* or top or bottom */
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+
+a {
+    color: black;
+}
+
+li {
+    list-style: none
+}
+
+.name {
+    font-size: 30px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    float:left;
+    padding: 2%;
+    padding-left: 0%;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar ul {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 7px;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) or (-webkit-device-pixel-ratio: 3) {
+    .sidebar {
+        text-align: center;
+        height: auto;
+        width: 100%;
+      }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+    .sidebar {
+        text-align: center;
+        height: auto;
+        width: 100%;
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { }
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) { */
+@media only screen and (min-width: 1060px) { 
+    .v-img-text-box {
+        /* display: inline-block; */
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .v-img-text-box-top {
+        /* display: inline-block; */
+        flex-direction: row;
+        align-items: start;
+        .sidebar {
+            height:auto;
+        }
+    }
+
+    img {
+        margin-left: auto;
+        /* margin-right: auto; */
+        max-width: 60%;
+        max-height: 100%;
+        /* float: top; */
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        float:left; 
+        width:30vh;
+        min-width: 250px; 
+        text-align: left; 
+        padding: 2%;
+        padding-left: 0%;
+        height: 100vh;
+    }
+ }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { }
