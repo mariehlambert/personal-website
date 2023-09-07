@@ -8,15 +8,55 @@ body {
     padding: 5%;
 }
 
+.h-img-text-box {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.v-img-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.v-img-text-box-fixed {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-content: flex-start;
+}
+
+.v-img-text-box-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 img {
     max-width: 80%;
     max-height: 100%;
-    margin-left: 10%;
-    margin-right: auto;
-    left: 50%;
+    margin: 5%;
+    margin-top: 2%;
+    left: 60%;
     text-align: center;
+    display: inline-block;
+    vertical-align: top; /* or top or bottom */
 }
 
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+
+a {
+    color: black;
+}
+
+li {
+    list-style: none
+}
 
 .name {
     font-size: 30px;
@@ -73,20 +113,37 @@ img {
 @media only screen and (min-width: 768px) { }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) { */
+@media only screen and (min-width: 1060px) { 
+    .v-img-text-box {
+        /* display: inline-block; */
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .v-img-text-box-top {
+        /* display: inline-block; */
+        flex-direction: row;
+        align-items: start;
+        .sidebar {
+            height:auto;
+        }
+    }
 
     img {
         margin-left: auto;
+        /* margin-right: auto; */
         max-width: 60%;
         max-height: 100%;
-        float: top;
+        /* float: top; */
     }
 
     .sidebar {
         display: flex;
         flex-direction: column;
         float:left; 
-        width:30vh; 
+        width:30vh;
+        min-width: 250px; 
         text-align: left; 
         padding: 2%;
         padding-left: 0%;
